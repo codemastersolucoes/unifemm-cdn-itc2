@@ -1,7 +1,7 @@
 $(document).ready(function () {
     if (searchParams('SelectedMenuIDKey', 'mnNegociacao')) {
         let $rowsDebits = $('.dxgvDataRow_Edu');
-        let $columnDue = $($rowsDebits).last('td');
+        let $columnDue = $($rowsDebits).find('td');
         console.log($rowsDebits, $columnDue);
     }
 });

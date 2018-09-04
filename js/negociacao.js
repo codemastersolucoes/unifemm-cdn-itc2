@@ -4,7 +4,7 @@ $(document).ready(function () {
         // let $columnDue = $($rowsDebits).find('td');
         $('tr.dxgvDataRow_Edu').each(function(){
             let $columnDue = $(this).find('td:last');
-            console.log($columnDue);
+            console.log($columnDue.text());
         });
 
     }

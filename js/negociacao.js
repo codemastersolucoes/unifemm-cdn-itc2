@@ -9,7 +9,7 @@ let searchParams = function ($key, $value) {
     let params = new URLSearchParams(window.location.search);
 
     if (params.has($key)) {
-        let param = searchParams.get($key);
+        let param = params.get($key);
 
         if (param === $value) {
             return param;

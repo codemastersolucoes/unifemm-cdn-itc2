@@ -1,7 +1,5 @@
 $(document).ready(function () {
     if (searchParams('SelectedMenuIDKey', 'mnNegociacao')) {
-        // let $rowsDebits = $('.dxgvDataRow_Edu');
-        // let $columnDue = $($rowsDebits).find('td');
         $('tr.dxgvDataRow_Edu').each(function(){
             let $columnDue = $(this).find('td:last');
             console.log($columnDue.text());
@@ -22,4 +20,12 @@ let searchParams = function ($key, $value) {
 
         return null;
     }
+};
+
+let splitDate = function ($date, $separator) {
+    return $date.split()
+};
+
+let createDate = function ($year, $month, $day) {
+    return new Date($year, $month, $day);
 };

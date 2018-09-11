@@ -45,5 +45,5 @@ let splitDate = function ($date, $separator) {
 };
 
 let createDate = function ($year, $month, $day) {
-    return new Date($year, $month, $day);
+    return new Date($year, $month, $day).setUTCHours();
 };

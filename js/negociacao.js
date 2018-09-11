@@ -14,13 +14,12 @@ $(document).ready(function () {
                 if (!((diffDays > 30) && (diffDays < 60))) {
                     $(this).hide();
                 }
+
+                console.log(diffDays);
             } else {
                 $(this).hide();
             }
-
-            console.log(diffDays);
         });
-
     }
 });
 

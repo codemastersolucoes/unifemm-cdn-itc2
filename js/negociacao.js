@@ -5,11 +5,15 @@ $(document).ready(function () {
             let $dateSplited = splitDate($columnDue.text(), "/");
             let $newDate = createDate($dateSplited[2], $dateSplited[1], $dateSplited[2]);
             let $dateNow = new Date();
+            let $difDaysDates = $newDate - $dateNow;
 
             console.log($columnDue.text());
             console.log($dateSplited);
             console.log($newDate);
             console.log($dateNow);
+            console.log($difDaysDates);
+
+            // if (()
         });
 
     }

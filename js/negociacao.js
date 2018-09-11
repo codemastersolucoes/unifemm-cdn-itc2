@@ -2,8 +2,8 @@ $(document).ready(function () {
     if (searchParams('SelectedMenuIDKey', 'mnNegociacao')) {
         $('tr.dxgvDataRow_Edu').each(function(){
             let $columnDue = $(this).find('td:last');
-            let $dateSplited = splitDate($columnDue.text(), "/");
-            let $newDate = createDate($dateSplited[2], parseInt($dateSplited[1])-1, $dateSplited[0]);
+            let $dateSplit = splitDate($columnDue.text(), "/");
+            let $newDate = createDate($dateSplit[2], parseInt($dateSplit[1])-1, $dateSplit[0]);
             let $dateNow = new Date();
             $dateNow = createDate($dateNow.getFullYear(), $dateNow.getMonth(), $dateNow.getDay());
 
@@ -15,7 +15,7 @@ $(document).ready(function () {
                     $(this).hide();
                 }
 
-                console.log(diffDays);
+                // console.log(diffDays);
             } else {
                 $(this).hide();
             }

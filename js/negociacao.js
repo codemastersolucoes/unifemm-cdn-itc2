@@ -3,6 +3,7 @@ $(document).ready(function () {
         $('tr.dxgvDataRow_Edu').each(function(){
             let $columnDue = $(this).find('td:last');
             console.log($columnDue.text());
+            console.log(splitDate($columnDue.text()));
         });
 
     }
@@ -23,7 +24,7 @@ let searchParams = function ($key, $value) {
 };
 
 let splitDate = function ($date, $separator) {
-    return $date.split()
+    return $date.split($separator);
 };
 
 let createDate = function ($year, $month, $day) {

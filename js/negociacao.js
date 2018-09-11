@@ -14,13 +14,14 @@ $(document).ready(function () {
             console.log($dateNow);
             console.log($difDaysDates);
 
-            var date1 = new Date("7/13/2010");
-            var date2 = new Date("12/15/2010");
-            var timeDiff = Math.abs($newDate.getTime() - $dateNow.getTime());
-            var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
-            console.log(diffDays);
+            if ($dateNow < $dateSplited) {
+                var timeDiff = Math.abs($newDate.getTime() - $dateNow.getTime());
+                var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+            } else {
+                $(this).hide();
+            }
 
-            // if (()
+
         });
 
     }

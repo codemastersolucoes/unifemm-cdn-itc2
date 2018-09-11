@@ -6,22 +6,19 @@ $(document).ready(function () {
             let $newDate = createDate($dateSplited[2], parseInt($dateSplited[1])-1, $dateSplited[0]);
             let $dateNow = new Date();
             $dateNow = createDate($dateNow.getFullYear(), $dateNow.getMonth(), $dateNow.getDay());
-            let $difDaysDates = $newDate - $dateNow;
 
-            console.log($columnDue.text());
-            console.log($dateSplited);
-            console.log($newDate);
-            console.log($dateNow);
-            console.log($difDaysDates);
-
-            if ($dateNow < $dateSplited) {
+            if ($dateNow > $dateSplited) {
                 var timeDiff = Math.abs($newDate.getTime() - $dateNow.getTime());
                 var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+                if (!((diffDays > 30) && (diffDays < 60))) {
+                    $(this).hide();
+                }
             } else {
                 $(this).hide();
             }
 
-
+            console.log(diffDays);
         });
 
     }

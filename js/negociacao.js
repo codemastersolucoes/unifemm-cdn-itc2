@@ -16,7 +16,7 @@ $(document).ready(function () {
 
             var date1 = new Date("7/13/2010");
             var date2 = new Date("12/15/2010");
-            var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+            var timeDiff = Math.abs($newDate.getTime() - $dateNow.getTime());
             var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
             console.log(diffDays);
 
@@ -45,5 +45,5 @@ let splitDate = function ($date, $separator) {
 };
 
 let createDate = function ($year, $month, $day) {
-    return new Date($year, $month, $day).setUTCHours(1);
+    return new Date($year, $month, $day).setUTCHours(-3);
 };

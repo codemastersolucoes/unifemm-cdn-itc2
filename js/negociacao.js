@@ -3,7 +3,7 @@ $(document).ready(function () {
         $('tr.dxgvDataRow_Edu').each(function(){
             let $columnDue = $(this).find('td:last');
             let $dateSplited = splitDate($columnDue.text(), "/");
-            let $newDate = createDate($dateSplited[2], $dateSplited[1], $dateSplited[2]);
+            let $newDate = createDate($dateSplited[2], $dateSplited[1], $dateSplited[0]);
             let $dateNow = new Date();
             $dateNow = createDate($dateNow.getFullYear(), $dateNow.getMonth(), $dateNow.getDay());
             let $difDaysDates = $newDate - $dateNow;

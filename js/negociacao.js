@@ -11,7 +11,7 @@ $(document).ready(function () {
                 var timeDiff = Math.abs($newDate.getTime() - $dateNow.getTime());
                 var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
 
-                if ((diffDays < 30) || (diffDays > 59)) {
+                if ((diffDays < 30) || (diffDays > 60)) {
                     $(this).hide();
                 }
 

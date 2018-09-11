@@ -5,6 +5,7 @@ $(document).ready(function () {
             let $dateSplited = splitDate($columnDue.text(), "/");
             let $newDate = createDate($dateSplited[2], $dateSplited[1], $dateSplited[2]);
             let $dateNow = new Date();
+            $dateNow = createDate($dateNow.getFullYear(), $dateNow.getMonth(), $dateNow.getDay());
             let $difDaysDates = $newDate - $dateNow;
 
             console.log($columnDue.text());

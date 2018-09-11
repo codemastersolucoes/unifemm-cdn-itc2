@@ -7,7 +7,7 @@ $(document).ready(function () {
             let $dateNow = new Date();
             $dateNow = createDate($dateNow.getFullYear(), $dateNow.getMonth(), $dateNow.getDay());
 
-            if ($dateNow > $dateSplited) {
+            if ($dateNow > $newDate) {
                 var timeDiff = Math.abs($newDate.getTime() - $dateNow.getTime());
                 var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
 

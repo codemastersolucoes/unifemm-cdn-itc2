@@ -3,7 +3,7 @@ $(document).ready(function () {
         $('tr.dxgvDataRow_Edu').each(function(){
             let $columnDue = $(this).find('td:last');
             console.log($columnDue.text());
-            console.log(splitDate($columnDue.text()));
+            console.log(splitDate($columnDue.text(), "/"));
         });
 
     }

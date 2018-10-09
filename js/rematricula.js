@@ -18,7 +18,7 @@ $(document).ready(function () {
         //     $('#EduMatriculaMainTable').empty().html('');
         // });3
 
-        $('#ctl23_xpcPopUp_PW0').bind('display', function() {
+        $('#ctl23_xpcPopUp_PW0').bind('isVisible', function() {
             alert("do something");
         });
     }

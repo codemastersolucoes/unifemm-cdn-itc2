@@ -3,12 +3,8 @@ $(document).ready(function () {
     let course = $(lblCourse).find('span:eq(1)').text();
 
     if ((course === 'Ensino Fundamental') || (course === 'Ensino Médio')) {
-        // $('#gpAltPlano').parent().hide();
+        $('#ctl23_xbtConfirmar').on('click', function () {
+            $('#EduMatriculaMainTable').empty().html('');
+        });
     }
-
-    console.log($('#ctl23_xbtConfirmar_CD'));
-
-    $('#ctl23_xbtConfirmar').on('click', function () {
-        alert('teste');
-    });
 });

@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     console.log($('#ctl23_xbtConfirmar_CD'));
 
-    $('.dxbButton_Edu').on('click', function () {
+    $('#ctl23_xbtConfirmar').on('click', function () {
         alert('teste');
     });
 });

@@ -6,6 +6,8 @@ $(document).ready(function () {
         // $('#gpAltPlano').parent().hide();
     }
 
+    console.log($('span:contains("Confirmar matrícula")'));
+
     $('span:contains("Confirmar matrícula")').on('click', function () {
         alert('teste');
     });

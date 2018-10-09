@@ -6,9 +6,9 @@ $(document).ready(function () {
         // $('#gpAltPlano').parent().hide();
     }
 
-    console.log($('span:contains("Confirmar matrícula")'));
+    console.log($('#ctl23_xbtConfirmar_CD'));
 
-    $('#ctl23_xbtConfirmar_CD').on('click', function () {
+    $('.dxbButton_Edu').on('click', function () {
         alert('teste');
     });
 });

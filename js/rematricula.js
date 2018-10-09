@@ -6,5 +6,7 @@ $(document).ready(function () {
         $('#gpAltPlano').parent().hide();
     }
 
-    $('#hdContrato').hide();
+    $('#ctl23_xpcPopUp_PW0').on('show', function () {
+        alert('teste');
+    });
 });

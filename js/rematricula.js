@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     console.log($('span:contains("Confirmar matrícula")'));
 
-    $('span:contains("Confirmar matrícula")').on('click', function () {
+    $('#ctl23_xbtConfirmar_CD').on('click', function () {
         alert('teste');
     });
 });

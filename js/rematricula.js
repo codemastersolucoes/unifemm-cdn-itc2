@@ -5,4 +5,6 @@ $(document).ready(function () {
     if ((course === 'Ensino Fundamental') || (course === 'Ensino Médio')) {
         $('#gpAltPlano').parent().hide();
     }
+
+    $('#hdContrato').hide();
 });
